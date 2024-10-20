@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Please fill in the form below:</h1>
+    <form action="">
+        <fieldset>
+            
+        <legend>Contact Details</legend>
+        <label for="username">Username:</label>
+        <input  id="username"type="text"  />
+        <br>
+        <label for="password">Password:</label>
+        <input  id="password" type="password"minlength="8" required />
+        <br>
+        <label for="email">Email:</label>
+        <input  id="email" type="email" placeholder="example@gmail.com"
+        required/>
+        <br>
+        <label for="date">Birthday:</label>
+        <input  id="date" type="date" required />
+        <br>
+        <label for="age">Age:</label>
+        <input  id="age" type="number" min="0" required />
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea id="message" rows="5" cols="40"></textarea>
+        <br>
+        <p>Please select the courses you want to study:</p>
+        <input id="IT4001" type="radio"  name="courses" value="IT4001"/>
+        <label for="IT4001">IT4001</label>
+        <br>
+        <input id= "IT4002" type="radio"  name="courses" value="IT4002"/>
+        <label for="IT4002">IT4002</label>
+        <br>
+        <input id= "IT4003" type="radio"  name="courses" value="IT4003"/>
+        <label for="IT4003">IT4003</label>
+        <br>
+        <input id= "IT4004" type="radio" name="courses" value="IT4004"/>
+        <label for="IT4004">IT4004</label>
+        <br>
+        <p>What device do you listen to music on?</p>
+        <select name="device" id="">
+            <option value="Phone">Phone</option>
+            <option value="Radio">Radio</option>
+            <option value="Computer">Computer</option>
+                </select>
+        <br>
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song">  <br><br>
+        <input type="submit" value="Upload">
+        <br>
+        <input type="submit">
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
